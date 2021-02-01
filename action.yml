@@ -1,0 +1,12 @@
+name: 'Docs Check'
+description: 'Run static analysis on markdown documentation'
+inputs:
+  linter:
+    description: 'Linter to run. Possible values: links, anchors, style, spelling, spelling_retext, spelling_yandex'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Run ${{ inputs.linter }} linter
+      run: ${{ github.action_path }}/execute.sh ${{ inputs.linter }}
+      shell: bash

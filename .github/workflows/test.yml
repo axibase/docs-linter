@@ -1,10 +1,4 @@
-# docs-linter
-Github Action to setup static analysis in Axibase documentation repositories
-
-Example workflow
-
-```yml
-name: Docs Linter
+name: CI
 
 on:
   push:
@@ -28,5 +22,3 @@ jobs:
         uses: axibase/docs-linter@v1
         with:
           linter: ${{ matrix.linter }}
-```
-
