@@ -1,9 +1,8 @@
-<!-- markdownlint-disable-next-line MD041 -->
 [![Build status](https://github.com/axibase/docs-linter/workflows/CI/badge.svg)](https://github.com/axibase/docs-linter/actions)
 
-# docs-linter
+# `docs-linter`
 
-Github Action to setup static analysis in Axibase documentation repositories
+GitHub Action to setup static analysis in Axibase documentation repositories
 
 Reference workflow
 
