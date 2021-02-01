@@ -17,6 +17,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         linter: [links, spelling, style, anchors]
 
