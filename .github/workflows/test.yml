@@ -11,11 +11,12 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         linter: [links, spelling, style, anchors]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: axibase/checkout@v2
         with:
           fetch-depth: 0
       - name: Running ${{ matrix.linter }} linter

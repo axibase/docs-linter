@@ -1,7 +1,10 @@
-# docs-linter
-Github Action to setup static analysis in Axibase documentation repositories
+[![Build status](https://github.com/axibase/docs-linter/workflows/CI/badge.svg)](https://github.com/axibase/docs-linter/actions)
 
-Example workflow
+# `docs-linter`
+
+GitHub Action to setup static analysis in Axibase documentation repositories
+
+Reference workflow
 
 ```yml
 name: Docs Linter
@@ -22,7 +25,7 @@ jobs:
         linter: [links, spelling, style, anchors]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: axibase/checkout@v2
         with:
           fetch-depth: 0
       - name: Running ${{ matrix.linter }} linter
@@ -30,4 +33,3 @@ jobs:
         with:
           linter: ${{ matrix.linter }}
 ```
-
