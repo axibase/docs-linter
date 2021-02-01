@@ -1,3 +1,5 @@
+[![Build status](https://github.com/axibase/docs-linter/workflows/CI/badge.svg)](https://github.com/axibase/docs-linter/actions)
+
 # docs-linter
 Github Action to setup static analysis in Axibase documentation repositories
 
